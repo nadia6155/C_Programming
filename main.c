@@ -202,5 +202,13 @@ int main(void)
     updateAge(&person1); // pass pointer to the function to it can update the age
     printf("Rowan age after bday (pointer/func change): %d\n", person1.age);
 
+    // type defs create a new type so we dont have to declare type each time
+    typedef float Temperature; // initialise typedef (usually before main)
+
+    Temperature today = 12.0;
+    Temperature tomorrow = 16.0;
+
+    printf("Temp today is %.1f. Temp tomorrow is %.1f.\n", today, tomorrow);
+
     return 0;
 }
