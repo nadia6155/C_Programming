@@ -210,5 +210,15 @@ int main(void)
 
     printf("Temp today is %.1f. Temp tomorrow is %.1f.\n", today, tomorrow);
 
+    // typedef structure
+    typedef struct {
+        char name[20];
+        int age;
+    } Owner;
+
+    Owner owner2 = {"Rowan M", 28};
+
+    printf("I made this structure variable using a typedef. Name: %s. Age: %d.\n", owner2.name, owner2.age);
+
     return 0;
 }
